@@ -7,6 +7,10 @@ body {
   color: #444444;
 }
 
+.intro{
+  padding: 100px 0 70px 0;
+}
+
 a {
   color: #DC3545;
   text-decoration: none;
@@ -323,15 +327,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .details .details-card{
-  z-index: 2000;
-  color:rgb(66, 66, 66);
-  transition: 0.5s;
-  border-radius: 3px 3px 3px 50px;
 
-  background: #f8f8f8;
+  padding: 30px;
   position: relative;
-
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  border-radius: 3px 3px 3px 50px!important;
+  z-index: 1;
 }
+
+
+
 .details .details-card a{
   color:#D83444;
 }
@@ -339,14 +348,15 @@ h1, h2, h3, h4, h5, h6 {
 .details .details-card::before {
   content: '';
   position: absolute;
-  right: 0;
-  left: 80%;
-  bottom: 80%;
-  top: 0;
-  transition: all 0.5s;
+  background:#ff5a6b;
+  right: -60px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  transition: all 0.3s;
   z-index: -1;
-  border-radius: 0 3px 0 50px;
-  background:linear-gradient(#d83444ad,#ff7d5663);
+  
 }
 .details-card:hover{
   color: #fff;
@@ -356,14 +366,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .details-card:hover::before {
-  background:linear-gradient(#DC3545,#ca3b4a);
+  background:#DC3545;
   right: 0;
-  left: 0;
-  bottom: 0;
   top: 0;
-  top: 0;
-  
-  border-radius: 3px 3px 3px 50px;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px 3px 3px 50px!important;
 
 }
 
@@ -408,8 +416,8 @@ h1, h2, h3, h4, h5, h6 {
   color:rgb(66, 66, 66);
   transition: 0.5s;
   border-radius: 3px 3px 3px 50px;
-
-  background: #f8f8f8;
+  box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
+  background: #ffffff;
   position: relative;
 
 }
@@ -436,13 +444,24 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.services-card .rounded-pill{
+  background: #DC3545!important;
+  color: #fff!important;
+  transition: all 0.3s;
+}
+.services-card:hover .rounded-pill{
+  background: #fff!important;
+  color: #DC3545!important;
+  transition: all 0.3s;
+}
+
 .services-card:hover::before {
   background:linear-gradient(#DC3545,#ca3b4a);
   top: 0;
   left: 0;
   right: 0;
   bottom:0;
-  border-radius: 3px 3px 3px 50px;
+  border-radius: 3px 3px 3px 3px;
 
 }
 
@@ -450,8 +469,8 @@ h1, h2, h3, h4, h5, h6 {
 .services .services-card2{
   z-index: 2000;
   color:rgb(255, 255, 255);
-  transition: 0.5s;
-  border-radius: 3px 3px 3px 50px;
+  transition: 0.3s;
+  border-radius: 3px 3px 3px 3px;
   background: #f8f8f8;
   position: relative;
   overflow: hidden;
@@ -464,7 +483,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0!important;
   right: 0!important;
   bottom:0!important;
-  border-radius: 3px 3px 3px 50px!important;
+  border-radius: 3px 3px 3px 3px!important;
 
 }
 
@@ -510,9 +529,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* services section */
+/* about services section */
 .about-services{
-  padding: 100px 0 70px 0;
+  padding: 50px 0 70px 0;
 }
 
 .about-services .row{
@@ -522,14 +541,31 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2000;
   color:rgb(66, 66, 66);
   transition: 0.5s;
+  box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
   border-radius: 3px 3px 3px 50px;
-
-  background: #f8f8f8;
+  background: #ffffff;
   position: relative;
 
 }
 .about-services .about-services-card a{
   color:#DC3545;
+}
+
+
+.about-services-card .rounded-pill{
+  background: #DC3545!important;
+  color: #fff!important;
+  transition: all 0.3s;
+}
+.about-services-cardactive .rounded-pill{
+  background: #fff !important;
+  color: #DC3545!important;
+  transition: all 0.3s;
+}
+.about-services-card:hover .rounded-pill{
+  background: #fff!important;
+  color: #DC3545!important;
+  transition: all 0.3s;
 }
 
 .about-services .about-services-card::before {
@@ -614,6 +650,40 @@ h1, h2, h3, h4, h5, h6 {
   display: none!important;
 }
 
+
+
+
+/* team */
+.team .row{
+  margin: 60px 0 60px 0!important;
+}
+.team .col-3{
+  height: 330px;
+  padding: 0 15px 0 15px;
+}
+.team .col-3 .contain{
+  border-radius: 3px;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  transition: all 0.3s;
+  background: #f2f2f25b;
+}
+.team .col-3 .contain:hover{
+  background: #ffffff;
+  transition: all 0.3s;
+}
+.team .img{
+
+  width: 100%;
+}
+.team .img img{
+
+  width: 100%;
+}
+.team .role{
+  font-size: smaller;
+  margin-top: -20px;
+  color: rgb(132, 132, 132);
+}
 
 /* contact section */
 .contact{

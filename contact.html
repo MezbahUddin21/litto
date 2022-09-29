@@ -15,6 +15,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
 <!-- 
   <link rel="stylesheet" href="css/lightbox.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
@@ -71,9 +72,9 @@
 <!-- breadcrumb -->
   <section id="breadcrumb" class="breadcrumb py-5">
     <div class="container py-5 text-center">
-          <div class="breadcrumb-sub-title text-uppercase mt-5 text-light">HOME | <span class="text-danger">CONTACT</span></div>
+          <div class="breadcrumb-sub-title text-uppercase mt-5 text-light" data-aos="fade-up">HOME | <span class="text-danger">CONTACT</span></div>
           <div class="title mt-4">
-            <h1 class="display-3 fw-bold text-light mb-4">CONTACT US</h1>
+            <h1 class="display-3 fw-bold text-light mb-4" data-aos="fade-up">CONTACT US</h1>
           </div>
     </div>
   </section>
@@ -86,33 +87,33 @@
     <div class="container">
       <div class="contact-details text-center">
         <div class="contact-title">
-          <p class="fs-2 text-dark fw-bold">
+          <p class="fs-2 text-dark fw-bold" data-aos="fade-up">
             CONTACT WITH US
           </p>
-          <p class="fs-6 text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda sint molestias?</p>
+          <p class="fs-6 text-dark" data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda sint molestias?</p>
         </div>
       </div>
       <div>
         <div class="row">
             <form action="js/validate.js" method="post" role="form" class="form">
                 <div class="row">
-                    <div class="form-group col-lg-6">
+                    <div class="form-group col-lg-6" data-aos="fade-up">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                     </div>
-                    <div class="form-group col-lg-6">
+                    <div class="form-group col-lg-6" data-aos="fade-up">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                     </div>
                 </div>
 
                 <div class="form-group mt-4">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message"  data-aos="fade-up" required></textarea>
                 </div>
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center"><button type="submit" class="btn btn-danger rounded-pill my-4">Send Message</button></div>
+                <div class="text-center"><button type="submit" class="btn btn-danger rounded-pill my-4" data-aos="fade-up">Send Message</button></div>
               </form>
         </div>
       </div>
@@ -198,7 +199,7 @@
   <!-- <script src="js/lightbox.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
   <script src="js/validate.js"></script>
-  
+  <script src="js/aos.js"></script>
   <script>
 
     lightGallery(document.querySelector(".gallery"));
