@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 /* hero section */
 
 .hero{
-  background: url("/img/hero.jpg");
+  background: url(../img/hero.jpg);
   background-size: cover;
   z-index: -1;
 }
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* buy section */
 .buy{
-  background: url("/img/buy.jpg");
+  background: url(../img/buy.jpg);
   background-size: cover;
   background-position: center;
   min-height: 300px;
@@ -493,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
 /* breadcrumb */
 
 .breadcrumb{
-  background: url("/img/hero.jpg");
+  background: url(../img/hero.jpg);
   background-size: cover;
   z-index: -1;
   background-attachment: fixed;
