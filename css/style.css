@@ -5,6 +5,9 @@ html{
   padding: 0!important;
   overflow-x: hidden;
 }
+section{
+  overflow:hidden;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   color: #444444;
