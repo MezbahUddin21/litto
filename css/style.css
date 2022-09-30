@@ -664,17 +664,17 @@ h1, h2, h3, h4, h5, h6 {
 .team .row{
   margin: 60px 0 60px 0!important;
 }
-.team .col-3{
+.team .col-lg-3{
   height: 330px;
   padding: 0 15px 0 15px;
 }
-.team .col-3 .contain{
+.team .col-lg-3 .contain{
   border-radius: 3px;
   box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
   transition: all 0.3s;
   background: #f2f2f25b;
 }
-.team .col-3 .contain:hover{
+.team .col-lg-3 .contain:hover{
   background: #ffffff;
   transition: all 0.3s;
 }
